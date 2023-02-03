@@ -2,12 +2,12 @@
 //  TrafficLightsButton.swift
 //  TrafficLightsSwiftUI
 //
-//  Created by Кукушкин Денис Сергеевич on 11.11.2022.
+//  Created by Кукушкин Денис Сергеевич on 02.02.2023
 //
 
 import SwiftUI
 
-struct TrafficLightsButton: View {
+struct SwitchLightsButton: View {
     let action: () -> Void
     let buttonText: String
     
@@ -29,6 +29,6 @@ struct TrafficLightsButton: View {
 
 struct TrafficLightsButton_Previews: PreviewProvider {
     static var previews: some View {
-        TrafficLightsButton(action: {}, buttonText: "HELLO")
+        SwitchLightsButton(action: {}, buttonText: "HELLO")
     }
 }

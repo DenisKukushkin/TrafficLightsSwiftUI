@@ -2,7 +2,7 @@
 //  TrafficLightsSwiftUIApp.swift
 //  TrafficLightsSwiftUI
 //
-//  Created by Кукушкин Денис Сергеевич on 09.11.2022.
+//  Created by Кукушкин Денис Сергеевич on 02.02.2023.
 //
 
 import SwiftUI

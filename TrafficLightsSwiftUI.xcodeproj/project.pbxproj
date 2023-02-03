@@ -12,7 +12,7 @@
 		AC0E0642291C27B700927EDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0E0641291C27B700927EDB /* Assets.xcassets */; };
 		AC0E0645291C27B700927EDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0E0644291C27B700927EDB /* Preview Assets.xcassets */; };
 		AC0E0650291E0C4D00927EDB /* ColoredCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E064F291E0C4D00927EDB /* ColoredCircle.swift */; };
-		AC0E0652291E0D8C00927EDB /* TrafficLightsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E0651291E0D8C00927EDB /* TrafficLightsButton.swift */; };
+		AC0E0652291E0D8C00927EDB /* SwitchLightsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0E0651291E0D8C00927EDB /* SwitchLightsButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +22,7 @@
 		AC0E0641291C27B700927EDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC0E0644291C27B700927EDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC0E064F291E0C4D00927EDB /* ColoredCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredCircle.swift; sourceTree = "<group>"; };
-		AC0E0651291E0D8C00927EDB /* TrafficLightsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightsButton.swift; sourceTree = "<group>"; };
+		AC0E0651291E0D8C00927EDB /* SwitchLightsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchLightsButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 				AC0E063D291C27B200927EDB /* TrafficLightsSwiftUIApp.swift */,
 				AC0E063F291C27B200927EDB /* ContentView.swift */,
 				AC0E064F291E0C4D00927EDB /* ColoredCircle.swift */,
-				AC0E0651291E0D8C00927EDB /* TrafficLightsButton.swift */,
+				AC0E0651291E0D8C00927EDB /* SwitchLightsButton.swift */,
 				AC0E0641291C27B700927EDB /* Assets.xcassets */,
 				AC0E0643291C27B700927EDB /* Preview Content */,
 			);
@@ -143,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC0E0652291E0D8C00927EDB /* TrafficLightsButton.swift in Sources */,
+				AC0E0652291E0D8C00927EDB /* SwitchLightsButton.swift in Sources */,
 				AC0E0640291C27B200927EDB /* ContentView.swift in Sources */,
 				AC0E063E291C27B200927EDB /* TrafficLightsSwiftUIApp.swift in Sources */,
 				AC0E0650291E0C4D00927EDB /* ColoredCircle.swift in Sources */,

@@ -2,12 +2,12 @@
 //  ContentView.swift
 //  TrafficLightsSwiftUI
 //
-//  Created by Кукушкин Денис Сергеевич on 09.11.2022.
+//  Created by Кукушкин Денис Сергеевич on 02.02.2023.
 //
 
 import SwiftUI
 
-enum CurrentLight {
+enum Lights {
     case red, yellow, green
 }
 
@@ -17,27 +17,27 @@ struct ContentView: View {
     @State private var opacityGreen = 0.3
     
     @State private var buttonText = "START"
-    @State private var currentLight = CurrentLight.red
+    @State private var lightIsOn = Lights.red
     
-    private func switchLight() {
+    private func changeLight() {
         
         if buttonText == "START" {
             buttonText = "NEXT"
         }
         
-        switch currentLight {
+        switch lightIsOn {
         case .red:
             opacityRed = 1.0
             opacityGreen = 0.3
-            currentLight = .yellow
+            lightIsOn = .yellow
         case .yellow:
             opacityYellow = 1.0
             opacityRed = 0.3
-            currentLight = .green
+            lightIsOn = .green
         case .green:
             opacityGreen = 1.0
             opacityYellow = 0.3
-            currentLight = .red
+            lightIsOn = .red
         }
     }
     
@@ -46,7 +46,7 @@ struct ContentView: View {
         opacityRed = 0.3
         opacityYellow = 0.3
         opacityGreen = 0.3
-        currentLight = .red
+        lightIsOn = .red
     }
     
     var body: some View {
@@ -59,9 +59,9 @@ struct ContentView: View {
                 ColoredCircle(color: .green, opacity: opacityGreen)
                 Spacer()
                 HStack {
-                    TrafficLightsButton(action: switchLight, buttonText: buttonText)
+                    SwitchLightsButton(action: changeLight, buttonText: buttonText)
                     Spacer()
-                    TrafficLightsButton(action: stopLights, buttonText: "STOP")
+                    SwitchLightsButton(action: stopLights, buttonText: "STOP")
                 }
                 .padding()
             }
